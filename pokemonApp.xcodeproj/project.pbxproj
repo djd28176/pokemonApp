@@ -11,6 +11,12 @@
 		CAD241D22B2765A900CDDF48 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAD241D12B2765A900CDDF48 /* ContentView.swift */; };
 		CAD241D42B2765AB00CDDF48 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CAD241D32B2765AB00CDDF48 /* Assets.xcassets */; };
 		CAD241D72B2765AB00CDDF48 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CAD241D62B2765AB00CDDF48 /* Preview Assets.xcassets */; };
+		CAD241DF2B2765F000CDDF48 /* PokemonModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAD241DE2B2765F000CDDF48 /* PokemonModel.swift */; };
+		CAD241E22B27675900CDDF48 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = CAD241E12B27675900CDDF48 /* Kingfisher */; };
+		CAD241E52B27946200CDDF48 /* PokemonViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAD241E42B27946200CDDF48 /* PokemonViewModel.swift */; };
+		CAD241E82B279B8F00CDDF48 /* PokeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAD241E72B279B8F00CDDF48 /* PokeCell.swift */; };
+		CAD241EA2B27A1BF00CDDF48 /* PokemonGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAD241E92B27A1BF00CDDF48 /* PokemonGridView.swift */; };
+		CAD241EC2B27A40000CDDF48 /* PokemonDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAD241EB2B27A40000CDDF48 /* PokemonDetailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +25,11 @@
 		CAD241D12B2765A900CDDF48 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		CAD241D32B2765AB00CDDF48 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CAD241D62B2765AB00CDDF48 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		CAD241DE2B2765F000CDDF48 /* PokemonModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonModel.swift; sourceTree = "<group>"; };
+		CAD241E42B27946200CDDF48 /* PokemonViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonViewModel.swift; sourceTree = "<group>"; };
+		CAD241E72B279B8F00CDDF48 /* PokeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokeCell.swift; sourceTree = "<group>"; };
+		CAD241E92B27A1BF00CDDF48 /* PokemonGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonGridView.swift; sourceTree = "<group>"; };
+		CAD241EB2B27A40000CDDF48 /* PokemonDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonDetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,6 +37,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CAD241E22B27675900CDDF48 /* Kingfisher in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -51,6 +63,9 @@
 		CAD241CE2B2765A900CDDF48 /* pokemonApp */ = {
 			isa = PBXGroup;
 			children = (
+				CAD241E62B279B7C00CDDF48 /* Views */,
+				CAD241E32B27943900CDDF48 /* ViewModel */,
+				CAD241DD2B2765E100CDDF48 /* Models */,
 				CAD241CF2B2765A900CDDF48 /* pokemonAppApp.swift */,
 				CAD241D12B2765A900CDDF48 /* ContentView.swift */,
 				CAD241D32B2765AB00CDDF48 /* Assets.xcassets */,
@@ -65,6 +80,32 @@
 				CAD241D62B2765AB00CDDF48 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		CAD241DD2B2765E100CDDF48 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				CAD241DE2B2765F000CDDF48 /* PokemonModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		CAD241E32B27943900CDDF48 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				CAD241E42B27946200CDDF48 /* PokemonViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		CAD241E62B279B7C00CDDF48 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				CAD241E72B279B8F00CDDF48 /* PokeCell.swift */,
+				CAD241E92B27A1BF00CDDF48 /* PokemonGridView.swift */,
+				CAD241EB2B27A40000CDDF48 /* PokemonDetailView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +124,9 @@
 			dependencies = (
 			);
 			name = pokemonApp;
+			packageProductDependencies = (
+				CAD241E12B27675900CDDF48 /* Kingfisher */,
+			);
 			productName = pokemonApp;
 			productReference = CAD241CC2B2765A900CDDF48 /* pokemonApp.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +155,9 @@
 				Base,
 			);
 			mainGroup = CAD241C32B2765A900CDDF48;
+			packageReferences = (
+				CAD241E02B27675900CDDF48 /* XCRemoteSwiftPackageReference "Kingfisher" */,
+			);
 			productRefGroup = CAD241CD2B2765A900CDDF48 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -138,7 +185,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				CAD241D22B2765A900CDDF48 /* ContentView.swift in Sources */,
+				CAD241DF2B2765F000CDDF48 /* PokemonModel.swift in Sources */,
+				CAD241EA2B27A1BF00CDDF48 /* PokemonGridView.swift in Sources */,
+				CAD241E52B27946200CDDF48 /* PokemonViewModel.swift in Sources */,
 				CAD241D02B2765A900CDDF48 /* pokemonAppApp.swift in Sources */,
+				CAD241EC2B27A40000CDDF48 /* PokemonDetailView.swift in Sources */,
+				CAD241E82B279B8F00CDDF48 /* PokeCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -342,6 +394,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		CAD241E02B27675900CDDF48 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.10.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		CAD241E12B27675900CDDF48 /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CAD241E02B27675900CDDF48 /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = CAD241C42B2765A900CDDF48 /* Project object */;
 }
